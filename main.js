@@ -10,7 +10,11 @@ function sum(x,y){
 */
 // WRITE || EDIT THE CODE UNDER THIS LINE
 
+sum (x,y) => {
+  return x+y
 
+}
+sum (x,y)
 
 /*
 2) 
@@ -21,8 +25,11 @@ function consoleReturn(x,y){
 */
 // WRITE || EDIT THE CODE UNDER THIS LINE
 
+consoleReturn(x,y)=>{
+  console.log(x)
+  return y
+}
 
-
-
+consoleReturn(x,y)
 
 
