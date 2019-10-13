@@ -7,7 +7,7 @@ class Item extends Component {
       <div>
         <h1>Item Component:</h1>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE * 2 */}
-        <p>elem</p>
+        <p>{this.props.e}</p>
       </div>
     );
   }
