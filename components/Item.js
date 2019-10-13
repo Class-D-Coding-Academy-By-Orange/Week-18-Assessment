@@ -5,7 +5,7 @@ class Item extends Component {
   render() {
     return (
       <div>
-        <h1>Item Component:</h1>
+        <h1>{Item Component:this.state.day}</h1>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE * 2 */}
         <p>elem</p>
       </div>

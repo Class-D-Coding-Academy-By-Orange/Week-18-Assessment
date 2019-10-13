@@ -2,29 +2,32 @@
 
 import React, { Component } from 'react';
 // WRITE || EDIT THE CODE UNDER THIS LINE
-import Tasks from './Item';
+import Item from './Item';
 
 // WRITE || EDIT THE CODE UNDER THIS LINE
-class Tasks extends Component {
+class Tasks extends React Component {
   state = {
     day: "Sat"
   };
   changeDay() {
     // WRITE || EDIT THE CODE UNDER THIS LINE
-    day = 'Sun'
+    day = 'sat'
   }
   render() {
     return (
       <div>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
-        <h1>Tasks Component: state.day</h1>
+        <h1>{Tasks Component:this. state.day}</h1>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
-        <button onClick={changeDay}>Change Tasks State</button>
+        <button onClick={ this.setState.changeDay}>Change Tasks </button>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE*/}
-        <button onClick={changeTitle}>Change App State</button>
+        <button onClick={this.setState.changeTitle}>Change App State</button>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE *2 */}
-        todos.map((elem)=>{
-          return <Item e={elem}>
+        day.map((elem)=>{
+          return (
+            <Item e={elem}/>
+
+          );
         })
       </div>
     );
