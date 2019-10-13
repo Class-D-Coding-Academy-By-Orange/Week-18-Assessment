@@ -5,9 +5,9 @@ export default class Item extends Component {
   render() {
     return (
       <div>
-        <h1>Item Component:{this.props.e.tasks}</h1>
+        <h1>Item Component:</h1>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE * 2 */}
-        <p>{this.props.e.tasks}</p>
+        <p>{this.props.e}</p>
       </div>
     );
   }
