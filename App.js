@@ -1,7 +1,7 @@
 // Q2: App Component (there are 7 mistakes)
 
 // WRITE || EDIT THE CODE UNDER THIS LINE
-import Tasks from './components/Tasks';
+import Tasks from './components/Tasks'; //No error
 
 export default class App extends Component {
   state = {
@@ -10,17 +10,20 @@ export default class App extends Component {
   };
   changeTitle() {
     // WRITE || EDIT THE CODE UNDER THIS LINE
-    state.title = 'AGGREGOR ZOLDYCK'
+    state.title = 'AGGREGOR ZOLDYCK' // this.setState({title: 'AGGREGOR ZOLDYCK' })
   }
   render() {
     return (
+
+      ///////Under this line, I've edited the errors themselves.. instead of commenting next to them//////
+
       {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
       {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
-      <h1>App Component: state.title</h1>
+      <h1>App Component: state.title</h1> // <h1>{this.state.title}</h1>
       {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
-      <button onClick={changeTitle}>Change Title</button>
+      <button onClick={this.changeTitle}>Change Title</button>
       {/* WRITE || EDIT THE CODE UNDER THIS LINE*2 */}
-      <Tasks tasks={todos} changeTitleFromChild={changeTitle} />
+      <Tasks tasks={this.state.todos} changeTitleFromChild={this.changeTitle} />
     )
   }
 }
