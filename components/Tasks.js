@@ -2,30 +2,30 @@
 
 import React, { Component } from 'react';
 // WRITE || EDIT THE CODE UNDER THIS LINE
-import Tasks from './Item';
+import Item from './Item'; // Edited/Fixed
 
 // WRITE || EDIT THE CODE UNDER THIS LINE
-class Tasks extends Component {
+export default class Tasks extends Component { // Edited
   state = {
     day: "Sat"
   };
   changeDay() {
     // WRITE || EDIT THE CODE UNDER THIS LINE
-    day = 'Sun'
+    day = Date() //Edited
   }
   render() {
     return (
       <div>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
-        <h1>Tasks Component: state.day</h1>
+        <h1>{this.state.day}</h1> 
         {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
-        <button onClick={changeDay}>Change Tasks State</button>
-        {/* WRITE || EDIT THE CODE UNDER THIS LINE*/}
-        <button onClick={changeTitle}>Change App State</button>
+        <button onClick={this.changeDay}>Change Tasks State</button> //done
+        {/* WRITE || EDIT THE CODE UNDER THIS LINE*/} 
+        <button onClick={this.props.changeTitleFromChild()}>Change App State</button> //done
         {/* WRITE || EDIT THE CODE UNDER THIS LINE *2 */}
-        todos.map((elem)=>{
-          return <Item e={elem}>
-        })
+        this.props.tasks.map(elem)=>{       //Edited
+          return <Item e={elem}/>           //Edited
+        }
       </div>
     );
   }

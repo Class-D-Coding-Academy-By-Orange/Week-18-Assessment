@@ -7,6 +7,16 @@ Convert ES5 to ES6 :
 function sum(x,y){
   return x+y
 }
+
+
+//////////////////My Answer:////////////////////
+
+sum = (x,y) =>{
+return x+y
+}
+
+//////////////////////////////////////
+
 */
 // WRITE || EDIT THE CODE UNDER THIS LINE
 
@@ -18,6 +28,16 @@ function consoleReturn(x,y){
   console.log(x)
   return y
 }
+
+////////////////My Answer:///////////////////////
+
+consoleReturn = (x,y) => {
+  console.log(x)
+  return y
+}
+
+///////////////////////////////////////
+
 */
 // WRITE || EDIT THE CODE UNDER THIS LINE
 
