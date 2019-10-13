@@ -1,7 +1,7 @@
 // Q4: Item Component (there are 3 mistakes)
 import React, { Component } from 'react';
 {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
-class Item extends Component {
+export class Item extends Component {
   render() {
     return (
       <div>
@@ -12,3 +12,4 @@ class Item extends Component {
     );
   }
 }
+// export default Item;

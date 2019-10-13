@@ -1,7 +1,7 @@
 // Q2: App Component (there are 7 mistakes)
 
 // WRITE || EDIT THE CODE UNDER THIS LINE
-import Task from './components/Tasks';
+import {Tasks} from './components/Tasks';
 
 export default class App extends Component {
   state = {
@@ -22,7 +22,7 @@ export default class App extends Component {
       {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
       <button onClick={this.changeTitle}>Change Title</button>
       {/* WRITE || EDIT THE CODE UNDER THIS LINE*2 */}
-      <Task tasks={this.state.todos} changeTitleFromChild={this.changeTitle} />
+      <Tasks tasks={this.state.todos} changeTitleFromChild={this.changeTitle} />
 
     </div>)
   }

@@ -2,10 +2,10 @@
 
 import React, { Component } from 'react';
 // WRITE || EDIT THE CODE UNDER THIS LINE
-import Item from './Item';
+import {Item} from './Item';
 
 // WRITE || EDIT THE CODE UNDER THIS LINE
-class Tasks extends Component {
+export class Tasks extends Component {
   state = {
     day: "Sat"
   };
@@ -21,7 +21,7 @@ class Tasks extends Component {
         {/* WRITE || EDIT THE CODE UNDER THIS LINE */}
         <button onClick={this.changeDay}>Change Tasks State</button>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE*/}
-        <button onClick={this.props.changeTitle}>Change App State</button>
+        <button onClick={this.props.changeTitleFromChild}>Change App State</button>
         {/* WRITE || EDIT THE CODE UNDER THIS LINE *2 */}
         {this.props.tasks.map((elem)=>{
           return <Item e={elem} />
@@ -31,3 +31,5 @@ class Tasks extends Component {
     );
   }
 }
+
+// export default Tasks;
