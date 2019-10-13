@@ -10,7 +10,7 @@ function sum(x,y){
 */
 // WRITE || EDIT THE CODE UNDER THIS LINE
 
-
+let sum=(x,y)=>{return x+y}
 
 /*
 2) 
@@ -22,7 +22,7 @@ function consoleReturn(x,y){
 // WRITE || EDIT THE CODE UNDER THIS LINE
 
 
-
+let consoleReturn =(x,y)=>{return y}
 
 
 
